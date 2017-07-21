@@ -1,0 +1,352 @@
+body{
+    padding: 20px;
+}
+
+.functions{
+  display: flex;
+  font-size: 12px;
+  color: #fff;
+  font-weight: bold;
+  justify-content: space-between;
+  padding: 0 10px 5px 5px;
+}
+
+.site-wrapper{
+  background: #efefef;
+  border-radius: 5px;
+  /*padding: 10px;
+  box-sizing: border-box;*/
+/*  width: 100%;*/
+  overflow-y: scroll;
+/*  overflow-x: hidden;*/
+  height: 100%;
+  box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.5);
+}
+.site-wrapper::-webkit-scrollbar{
+  display: none;
+}
+
+.search-bar{
+  padding: 5px;
+  display: flex;
+  border-radius: 5px;
+  justify-content: flex-end;
+  align-items: center;
+}
+.search-bar>i{
+  margin-right: 10px;
+}
+.notice-live{
+  background: #cb2d3e;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  margin-right: 15px;
+}
+.notice-live>i{
+  margin-right: 10px;
+}
+
+header{
+/*  width: 100%;*/
+  /*height: 200px;*/
+  color: #fff;
+}
+.branding{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main-brand{
+  display: flex;
+  align-items: center;
+}
+.logo{
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  border-radius: 5px;
+}
+.logotype-short{
+  margin-left: 10px;
+  font-size: 40px;
+  font-weight: 800;
+  font-family: serif;
+  color: #865acf;
+}
+.logotype-full{
+  text-align: right;
+}
+.logotype-full>b,span{
+  display: block;
+}
+.logotype-full>b{
+  font-weight: 600;
+  font-size: 18px;
+}
+.logotype-full>span{
+  font-size: 10px;
+}
+nav{
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.menu-item{
+  display: inline-block;
+  font-size: 15px;
+  /*max-width: 100px;*/
+  position: relative;
+  padding-bottom: 10px;
+}
+.menu-item:hover>.drop{
+  display: block;
+}
+.drop{
+  display: none;
+  position: absolute;
+  background: #fff;
+  color: #222;
+  font-size: 15px;
+  border-radius: 5px;
+  min-width: 250px;
+  /*margin-top: 10px;*/
+  padding: 10px 0;
+  box-sizing: border-box;
+  /*box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.5);*/
+}
+.drop:hover{
+  display: block;
+}
+.drop-item{
+  display: block;
+  padding: 5px;
+  cursor: pointer;
+}
+.drop-item:hover{
+  background: #30122d;
+  color: #fff;
+}
+marquee{
+  font-size: 12px;
+  background: #cb2d3e;
+  color: #fff;
+  padding: 5px;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+
+.head-content{
+  background-color: #30122d;
+  background-image: url("http://www.bpitindia.com/images/bpit1.jpg");
+  background-blend-mode: overlay;
+  background-size: cover;
+  padding: 10px;
+/*  box-sizing: border-box;*/
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+    margin-top: 0px;
+}
+
+.intro-content{
+  color: #fff;
+  width: 60%;
+}
+.intro-content>h2{
+  font-size: 50px;
+}
+
+/*
+.events{
+  width: 100%;
+  height: 400px;
+  padding: 10px;
+}
+.events,.news>h2{
+  color: #cb2d3e;
+}
+.events-list{
+  width: 300%;
+  padding:10px 0;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+*/
+/*
+.events-post{
+  margin-left: 20px;
+  display: inline-block;
+  background-image: url("https://i.ytimg.com/vi/ChgmOXRxOFA/maxresdefault.jpg");
+  background-color: #333;
+  background-size: cover;
+  background-blend-mode: overlay;
+  width: 300px;
+  height: 250px;
+  border-radius: 5px;
+  padding: 10px;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+*/
+  /*display: flex;
+  flex-direction: column;
+  justify-content: space-around;*/
+/*}*/
+/*
+.events-post:hover{
+  box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.6);
+  transform: translateY(-10px);
+}
+*/
+/*
+.events-content{
+  margin-top: 40%;
+  font-weight: bold;
+  font-size: 25px;
+  text-decoration: underline;
+}
+*/
+.others{
+  position: relative;
+/*  width: 100%;*/
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.news,.notices{
+  width: 300px;
+}
+.news-list,.notices-list{
+  background: #fff;
+  padding: 10px;
+  border-radius: 5px;
+}
+.notices>h2{
+  color: #cb2d3e;
+}
+
+.footer{
+  position: relative;
+  margin-top: 20px;
+  background: #30122d;
+  color: #cb2d3e;
+  padding: 10px;
+}
+.quick>a,h3{
+  display: block;
+}
+.custom-icon{
+  background-color:#cb2d3e !important;
+  color: white;
+  
+}
+
+.navbar-nav>li>a{
+  font-size: 17px;
+  color: white;
+  padding: 0px;
+}
+
+a:hover{
+  border-radius: 6px;
+  background-color: #cb2d3e !important;
+}
+
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+    background-color: #cb2d3e !important;
+    border-color: #337ab7;
+    border-radius: 6px;
+}
+
+.topnavbar{
+  background-color: #30122d;
+  background-image: url("http://www.bpitindia.com/images/bpit1.jpg");
+  background-blend-mode: overlay;
+  background-size: cover;
+  padding: 10px; 
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+/*
+  box-sizing: border-box;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+*/
+}
+
+.sidenav-options{
+    box-sizing: border-box;
+    background-color: #5e245a;
+    font-size: 15.5px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.sidenav-options-atags{
+    color: white;
+    text-align: center;
+}
+
+.writtenpart{
+    padding: 10px;
+}
+
+.headingsh4{
+    color: #5e245a;
+    font-family: 'Arvo', serif;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.headingsh2{
+    color : #cb2d3e;
+    font-family: 'Pacifico', cursive;
+}
+
+p{
+    font-family: 'Kite One', sans-serif;
+    font-size: 15px;
+}
+
+.names{
+    color : #cb2d3e;
+    font-size: 17px;
+}
+
+.namesdetail{
+    color: #5e245a;
+}
+
+.tableHeading{
+    color: #5e245a;
+}
+
+.contactpara{
+    font-size: 18px;
+    color: #5e245a;
+    line-height: 1.5;
+}
+
+.sidenav-options-head{
+    box-sizing: border-box;
+    background-color: #eeeeee;
+    font-size: 15.5px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    text-align: center;
+    height: 33px;
+}
+
+.submitButton{
+    background-color: #5e245a;
+    width:100px;
+    height:30px;
+    color: white;
+    border-radius: 10px;  
+}
+
+.departmentNavs{
+    font-size: 22px;
+    color: #5e245a;
+}
